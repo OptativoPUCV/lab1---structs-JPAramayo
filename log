@@ -235,3 +235,17 @@ Thu 14 Mar 2024 03:16:36 PM UTC:
  tests:  0|4
 total_score: 30/70
 c649fe2
+Thu 14 Mar 2024 03:22:17 PM UTC: 
+ exercises.c | 12 ++++++++++++
+ 1 file changed, 12 insertions(+)
+In file included from test.c:1:
+exercises.c: In function ‘mergeSortedArrays’:
+exercises.c:84:3: error: expected ‘}’ before ‘else’
+   84 |   else {
+      |   ^~~~
+exercises.c: At top level:
+exercises.c:91:1: error: expected identifier or ‘(’ before ‘}’ token
+   91 | }
+      | ^
+Compilation failed
+24a251d
