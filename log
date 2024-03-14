@@ -48,3 +48,36 @@ exercises.c:60:7: error: unused variable ‘i’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 dc1fe21
+Thu 14 Mar 2024 02:42:42 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘reverseArray’:
+exercises.c:27:8: error: ‘i’ undeclared (first use in this function)
+   27 |   for (i = size ; i >= 0; i--) {
+      |        ^
+exercises.c:27:8: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:26:7: error: variable ‘revArr’ set but not used [-Werror=unused-but-set-variable]
+   26 |   int revArr[size];
+      |       ^~~~~~
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:42:3: error: ‘j’ undeclared (first use in this function); did you mean ‘jn’?
+   42 |   j = 0;
+      |   ^
+      |   jn
+exercises.c:43:8: error: ‘i’ undeclared (first use in this function)
+   43 |   for (i = 0 ; i < size; i++) {
+      |        ^
+exercises.c: In function ‘mergeSortedArrays’:
+exercises.c:60:21: error: unused variable ‘k’ [-Werror=unused-variable]
+   60 |   int i = 0, j = 0, k = 0;
+      |                     ^
+exercises.c:60:14: error: unused variable ‘j’ [-Werror=unused-variable]
+   60 |   int i = 0, j = 0, k = 0;
+      |              ^
+exercises.c:60:7: error: unused variable ‘i’ [-Werror=unused-variable]
+   60 |   int i = 0, j = 0, k = 0;
+      |       ^
+cc1: all warnings being treated as errors
+Compilation failed
+0368df2
