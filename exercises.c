@@ -29,14 +29,6 @@ void reverseArray(int arr[], int size) {
     arr[i] = arr[size - 1 - i];
     arr[size - 1 - i] = temp;
   }
-  /*int revArr[size];
-  for (int i = (size - 1) ; i >= 0; i--) {
-    revArr[(size - 1) - i] = arr[i];
-  }
-  arr = revArr;
-  for (int i = 0; i < size; i++) {
-    arr[i] = revArr[i];
-  }*/
 }
 
 /*
@@ -58,7 +50,7 @@ int *filterEvenNumbers(int arr[], int size, int *newSize) {
     }
     *newSize = j;
   }
-  return parArr; 
+  return parArr;
 }
 
 /*
@@ -69,9 +61,22 @@ arreglos en un tercer arreglo también ordenado de menor a mayor.
 */
 void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2,
                        int result[]) {
-  //int i = 0, j = 0, k = 0;
+  int i = 0;
+  int j = 0;
+  int k = 0;
   
-                       }
+  while (i < size1 && j < size2) {
+    if (arr1[i] < arr2[j]) {
+      result[k] = arr1[i];
+      i++;
+    }
+    else {
+      result[k] = arr2[j];
+      j++;
+    }
+    k++;
+  }
+}
 
 /*
 Ejercicio 5: Comprobación de Ordenación
