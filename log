@@ -111,3 +111,32 @@ exercises.c:60:7: error: unused variable ‘i’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 09c5a81
+Thu 14 Mar 2024 02:47:59 PM UTC: 
+ exercises.c | 4 ++++
+ 1 file changed, 4 insertions(+)
+In file included from test.c:1:
+exercises.c:34:1: error: expected identifier or ‘(’ before ‘}’ token
+   34 | }
+      | ^
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:46:3: error: ‘j’ undeclared (first use in this function); did you mean ‘jn’?
+   46 |   j = 0;
+      |   ^
+      |   jn
+exercises.c:46:3: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:47:8: error: ‘i’ undeclared (first use in this function)
+   47 |   for (i = 0 ; i < size; i++) {
+      |        ^
+exercises.c: In function ‘mergeSortedArrays’:
+exercises.c:64:21: error: unused variable ‘k’ [-Werror=unused-variable]
+   64 |   int i = 0, j = 0, k = 0;
+      |                     ^
+exercises.c:64:14: error: unused variable ‘j’ [-Werror=unused-variable]
+   64 |   int i = 0, j = 0, k = 0;
+      |              ^
+exercises.c:64:7: error: unused variable ‘i’ [-Werror=unused-variable]
+   64 |   int i = 0, j = 0, k = 0;
+      |       ^
+cc1: all warnings being treated as errors
+Compilation failed
+aba4cf0
