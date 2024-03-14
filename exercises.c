@@ -53,6 +53,7 @@ int *filterEvenNumbers(int arr[], int size, int *newSize) {
   for (int i = 0 ; i < size; i++) {
     if (arr[i] % 2 == 0) {
       parArr[j] = arr[i];
+      parArr = realloc(parArr, sizeof(int) * (j + 1));
       j++;
     }
   }
