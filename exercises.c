@@ -104,7 +104,7 @@ int checkSorted(int arr[], int size) {
         break;
       }
     }
-  if (flag == 1) {
+  if (flag == -1) {
     for (int i = 1 ; i < size ; i++) {
       if (arr[i] > arr[i - 1]) {
         flag = 0;
