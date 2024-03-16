@@ -325,3 +325,17 @@ Sat 16 Mar 2024 02:32:18 PM UTC:
  tests:  0|2
 total_score: 50/70
 eb9250c
+Sat 16 Mar 2024 02:33:28 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘mergeSortedArrays’:
+exercises.c:80:31: error: expected ‘)’ before ‘{’ token
+   80 |   if ((size1 - i) > (size2 -j) {
+      |      ~                        ^~
+      |                               )
+exercises.c:92:1: error: expected expression before ‘}’ token
+   92 | }
+      | ^
+Compilation failed
+a2e4aeb
