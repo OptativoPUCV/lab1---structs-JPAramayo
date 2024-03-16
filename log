@@ -273,3 +273,16 @@ Fri 15 Mar 2024 11:35:14 PM UTC:
  tests:  0|2
 total_score: 50/70
 7d96929
+Sat 16 Mar 2024 01:15:02 PM UTC: 
+ exercises.c | 11 ++++++++++-
+ 1 file changed, 10 insertions(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘inicializarLibro’:
+exercises.c:139:10: error: ‘libro’ redeclared as different kind of symbol
+  139 |   Libro *libro = malloc(sizeof(Libro));
+      |          ^~~~~
+exercises.c:137:30: note: previous definition of ‘libro’ with type ‘Libro *’
+  137 | void inicializarLibro(Libro *libro, const char *titulo, const char *nombreAutor,
+      |                       ~~~~~~~^~~~~
+Compilation failed
+eac0b41

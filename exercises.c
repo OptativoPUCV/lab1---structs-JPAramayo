@@ -135,7 +135,16 @@ typedef struct {
 } Libro;
 
 void inicializarLibro(Libro *libro, const char *titulo, const char *nombreAutor,
-                      int anioNacimiento, int anioPublicacion) {}
+                      int anioNacimiento, int anioPublicacion) {
+  Libro *libro = malloc(sizeof(Libro));
+  if (libro == NULL) exit(EXIT_FAILURE);
+
+  strcpy(libro->titulo, titulo);
+  libro->anioPublicacion = anioPublicacion;
+  
+  strcpy(libro->autor.nombre, nombreAutor);
+  libro->autor.anioNacimiento = anioNacimiento;
+                      }
 
 /*
 Ejercicio 7: Lista enlazada de números
