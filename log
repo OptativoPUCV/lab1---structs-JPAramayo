@@ -286,3 +286,12 @@ exercises.c:137:30: note: previous definition of ‘libro’ with type ‘Libro 
       |                       ~~~~~~~^~~~~
 Compilation failed
 eac0b41
+Sat 16 Mar 2024 01:15:27 PM UTC: 
+ exercises.c | 3 ---
+ 1 file changed, 3 deletions(-)
+Sat 16 Mar 2024 01:15:34 PM UTC: 
+ exercises.c | 3 ---
+ 1 file changed, 3 deletions(-)
+ tests:  0|3
+total_score: 40/70
+51fa08f
