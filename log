@@ -377,3 +377,17 @@ exercises.c:69:1: error: control reaches end of non-void function [-Werror=retur
 cc1: all warnings being treated as errors
 Compilation failed
 84ec134
+Sat 16 Mar 2024 03:07:58 PM UTC: 
+ exercises.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:43:44: error: expected statement before ‘)’ token
+   43 |   int *parArr = malloc(sizeof(int) * size);)
+      |                                            ^
+exercises.c: At top level:
+exercises.c:70:1: error: expected identifier or ‘(’ before ‘}’ token
+   70 | }
+      | ^
+Compilation failed
+7e9801f
